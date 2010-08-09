@@ -1,5 +1,5 @@
 #BSUIViewRearranger
-_by @\_karsten\_ _
+by @\_karsten\_ 
 
 ##About
 The problem is simple: you create an app in portrait mode, think about the landscape UI and figure that all you want is the same controls, but just a different layout.
