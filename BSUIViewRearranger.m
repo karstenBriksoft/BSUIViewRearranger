@@ -20,7 +20,13 @@
 	NSArray* targetViews = [targetView subviews];
 	NSArray* sourceViews = [sourceView subviews];
 	NSInteger i;
-	NSAssert([targetViews count] == [sourceViews count],@"The view's structures don't match!!");
+	
+	if ([targetViews count] != [sourceViews count]) 
+	{
+		// one could assert here and yell, but returning silently seems the most sane solution
+		return;
+	}
+	
 	NSInteger count = [targetViews count];
 	for (i = 0; i < count; i++)
 	{
